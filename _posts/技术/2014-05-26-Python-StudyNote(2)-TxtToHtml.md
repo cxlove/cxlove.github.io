@@ -326,7 +326,7 @@ keywords :
 　　相应的html效果：
 
 
-![Result](\images\PythonNote2_1.png)
+![Result](/images/PythonNote2_1.png)
 
 ## 扩展
 

@@ -91,4 +91,4 @@ keywords :
 
 　　生成的PDF效果见下图：
 
-![Result](\images\PythonNote3_1.png)
+![Result](/images/PythonNote3_1.png)

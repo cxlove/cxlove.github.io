@@ -33,7 +33,7 @@ keywords :
 
 　　首先，我们先抓吧，看看POJ在登录的时候，都post了些什么数据。在chrome中，直接F12利用开发工具就能完成抓包。见下图
 
-![PostData](\images\PythonNote4_1.png)
+![PostData](/images/PythonNote4_1.png)
 
 　　有两个步骤，1、伪造成浏览器，不然可能会被认为是恶意攻击，即构造 一个headers，2、提供相应的PostData,即From Data里面的信息。
 

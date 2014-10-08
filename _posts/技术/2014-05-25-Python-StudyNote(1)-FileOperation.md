@@ -94,6 +94,6 @@ tags : Python study-note
 
 　　运行结果如下：
 
-![Result](\images\PythonNote1_1.png)
+![Result](/images/PythonNote1_1.png)
 
 

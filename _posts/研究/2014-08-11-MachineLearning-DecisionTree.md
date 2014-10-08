@@ -24,9 +24,9 @@ tags : MachineLearning study-note Python
 ### 熵与信息增益
 　　对于一种方案，必须有个量化的数据去衡量。
 
-　　信息论中引入熵(Entropy)作为衡量标准，刻画了任意样例集的纯度。$$Entropy = - \sum_{i = 1}^{n}p(x_i)\log_{2}p(x_i) $$，其中我们将样例分为n类，每类所占的比例为$$p(x_i)$$。
+　　信息论中引入熵(Entropy)作为衡量标准，刻画了任意样例集的纯度。<a href="http://www.codecogs.com/eqnedit.php?latex=Entropy&space;=&space;-&space;\sum_{i&space;=&space;1}^{n}p(x_i)\log_{2}p(x_i)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?Entropy&space;=&space;-&space;\sum_{i&space;=&space;1}^{n}p(x_i)\log_{2}p(x_i)" title="Entropy = - \sum_{i = 1}^{n}p(x_i)\log_{2}p(x_i)" /></a>，其中我们将样例分为n类，每类所占的比例为<a href="http://www.codecogs.com/eqnedit.php?latex=p(x_i)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?p(x_i)" title="p(x_i)" /></a>。
 
-　　而进一步通过纯度差来表示信息增益(Information Gain)。$$\Delta = Entropy (parent) - \sum_{j = 1}^{k}{\frac{N(v_j)}{N}*Entropy(v_j)}$$。
+　　而进一步通过纯度差来表示信息增益(Information Gain)。<a href="http://www.codecogs.com/eqnedit.php?latex=\Delta&space;=&space;Entropy&space;(parent)&space;-&space;\sum_{j&space;=&space;1}^{k}{\frac{N(v_j)}{N}*Entropy(v_j)}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\Delta&space;=&space;Entropy&space;(parent)&space;-&space;\sum_{j&space;=&space;1}^{k}{\frac{N(v_j)}{N}*Entropy(v_j)}" title="\Delta = Entropy (parent) - \sum_{j = 1}^{k}{\frac{N(v_j)}{N}*Entropy(v_j)}" /></a>。
 
 　　有了衡量标准之后，我们便是每次寻找信息增益最大的方案。
 
