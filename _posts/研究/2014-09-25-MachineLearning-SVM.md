@@ -37,7 +37,7 @@ keywords :
 
 <strong>函数间隔 : </strong>
 
-对于分离平面<a href="http://www.codecogs.com/eqnedit.php?latex=$$w^T&space;*&space;x&space;&plus;&space;b&space;=&space;0$$" target="_blank"><img src="http://latex.codecogs.com/gif.latex?$$w^T&space;*&space;x&space;&plus;&space;b&space;=&space;0$$" title="$$w^T * x + b = 0$$" /></a>确定的情况下，我们认为<a href="http://www.codecogs.com/eqnedit.php?latex=$$|w^T&space;*&space;x&space;&plus;&space;b|$$" target="_blank"><img src="http://latex.codecogs.com/gif.latex?$$|w^T&space;*&space;x&space;&plus;&space;b|$$" title="$$|w^T *...(line truncated)...
+对于分离平面<a href="http://www.codecogs.com/eqnedit.php?latex=$$w^T&space;*&space;x&space;&plus;&space;b&space;=&space;0$$" target="_blank"><img src="http://latex.codecogs.com/gif.latex?$$w^T&space;*&space;x&space;&plus;&space;b&space;=&space;0$$" title="$$w^T * x + b = 0$$" /></a>确定的情况下，我们认为<a href="http://www.codecogs.com/eqnedit.php?latex=|w^T&space;*&space;x&space;&plus;&space;b|" target="_blank"><img src="http://latex.codecogs.com/gif.latex?|w^T&space;*&space;x&space;&plus;&space;b|" title="|w^T * x + b|" /></a>表示的是与分离平面的距离。称为函数间隔。
 
 而分离平面(w , b)对于所有样本的的函数间隔为对所有样例点的函数间隔的最小值，即：<a href="http://www.codecogs.com/eqnedit.php?latex=$$\gamma&space;=&space;\min\limits_{i=1,2,\dots&space;n}\hat{\gamma}$$" target="_blank"><img src="http://latex.codecogs.com/gif.latex?$$\gamma&space;=&space;\min\limits_{i=1,2,\dots&space;n}\hat{\gamma}$$" title="$$\gamma = \min\limits_{i=1,2,\dots n}\hat{\gamma}$$" /></a>
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title : MachineLearing学习笔记(4)--Logistic回归
 description : MachineLearing学习笔记(4)--Logistic回归
@@ -69,23 +69,23 @@ $$ f(x) = \frac{1}{1+e^{-z}}$$
 
 　　测试1，普通的梯度下降，步长0.01，迭代500次。实验结果如下：
 
-![result1](\images\ML4_1.png)
-![result2](\images\ML4_2.png)
+![result1](/images/ML4_1.png)
+![result2](/images/ML4_2.png)
 
 　　测试2，普通梯度下降，步长0.001，迭代500次。实验结果如下：
 
-![result3](\images\ML4_3.png)
-![result4](\images\ML4_4.png)
+![result3](/images/ML4_3.png)
+![result4](/images/ML4_4.png)
 
 　　测试3，随机梯度下降，步长0.01，迭代500次。实验结果如下：
 
-![result5](\images\ML4_5.png)
-![result6](\images\ML4_6.png)
+![result5](/images/ML4_5.png)
+![result6](/images/ML4_6.png)
 
 　　测试４，改进后的随机梯度下降，迭代500次。实验结果如下：
 
-![result7](\images\ML4_7.png)
-![result8](\images\ML4_8.png)
+![result7](/images/ML4_7.png)
+![result8](/images/ML4_8.png)
 
 # 从疝飞病症预测病马的死亡率
 
