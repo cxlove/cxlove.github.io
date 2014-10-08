@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title : MachineLearing学习笔记(4)--Logistic回归
 description : MachineLearing学习笔记(4)--Logistic回归
@@ -20,7 +20,7 @@ keywords :
 
 　　但是存在另外一个函数有着相似的性质，便是sigmod函数，公式如下 ：
 
-$$ f(x) = \frac{1}{1+e^{-z}}$$
+<a href="http://www.codecogs.com/eqnedit.php?latex=f(x)&space;=&space;\frac{1}{1&plus;e^{-z}}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?f(x)&space;=&space;\frac{1}{1&plus;e^{-z}}" title="f(x) = \frac{1}{1+e^{-z}}" /></a>
 
 　　可以知道sigmod函数在z=0的时候，值为0.5，然后是关于(0 , 0.5)中心对称的，而且值在(0 , 1)之间，z越接近负无穷，值越接近0，反之越接近1。
 
@@ -29,18 +29,18 @@ $$ f(x) = \frac{1}{1+e^{-z}}$$
 ## 线性模型
 
 ### 模型的定义
-　　假设当前样本有两个特征$$(x_1 , x_2)$$ ,所属类别$$y = 0 | y = 1$$。
+　　假设当前样本有两个特征<a href="http://www.codecogs.com/eqnedit.php?latex=(x_1&space;,&space;x_2)" target="_blank"><img src="http://latex.codecogs.com/gif.latex?(x_1&space;,&space;x_2)" title="(x_1 , x_2)" /></a> ,所属类别y = 0 | y = 1。
 
-　　我们定义线性模型$$f(x) = w_0 + w_1 * x_1 + w_2 * x_2$$。我们令$$x_0 = 1$$，那么便可以对每组特征构造向量$$x = \{x_0 , x_1 , x_2\}$$，系数向量$$w = \{w_0 , w_1 , w_2\}^T$$。那么可以得到$$f(x) = w^T * x$$。
+　　我们定义线性模型<a href="http://www.codecogs.com/eqnedit.php?latex=f(x)&space;=&space;w_0&space;&plus;&space;w_1&space;*&space;x_1&space;&plus;&space;w_2&space;*&space;x_2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?f(x)&space;=&space;w_0&space;&plus;&space;w_1&space;*&space;x_1&space;&plus;&space;w_2&space;*&space;x_2" title="f(x) = w_0 + w_1 * x_1 + w_2 * x_2" /></a>。我们令<a href="http://www.codecogs.com/eqnedit.php?latex=x_0&space;=&space;1" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x_0&space;=&space;1" title="x_0 = 1" /></a>，那么便可以对每组特征构造向量<a href="http://www.codecogs.com/eqnedit.php?latex=x&space;=&space;\{x_0&space;,&space;x_1&space;,&space;x_2\}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x&space;=&space;\{x_0&space;,&space;x_1&space;,&space;x_2\}" title="x = \{x_0 , x_1 , x_2\}" /></a>，系数向量<a href="http://www.codecogs.com/eqnedit.php?latex=w&space;=&space;\{w_0&space;,&space;w_1&space;,&space;w_2\}^T" target="_blank"><img src="http://latex.codecogs.com/gif.latex?w&space;=&space;\{w_0&space;,&space;w_1&space;,&space;w_2\}^T" title="w = \{w_0 , w_1 , w_2\}^T" /></a>。那么可以得到<a href="http://www.codecogs.com/eqnedit.php?latex=f(x)&space;=&space;w^T&space;*&space;x" target="_blank"><img src="http://latex.codecogs.com/gif.latex?f(x)&space;=&space;w^T&space;*&space;x" title="f(x) = w^T * x" /></a>。
 
 ### Cost Function
 　　我们知道，在不论是回归还是分类中，我们都会定义一个cost function，以得到模型预测与实际样本之间的“差距”，我们希望得到的模型的cost function尽可能小(当然了，我们这里暂时不考虑overfitting的情况)。
 
 　　那么两类0/1，我们直接定义距离的平方和作为cost function。
 
-　　然后定义$$J(w) = \frac{1}{2}\sum\limits_{i=1}^{N}(f(x_i) - y_i) ^ 2$$。其中$$x_i$$表示第i组学习样本的特征数据,$$y_i$$表示第i组学习样本的类别。
+　　然后定义<a href="http://www.codecogs.com/eqnedit.php?latex=J(w)&space;=&space;\frac{1}{2}\sum\limits_{i=1}^{N}(f(x_i)&space;-&space;y_i)&space;^&space;2" target="_blank"><img src="http://latex.codecogs.com/gif.latex?J(w)&space;=&space;\frac{1}{2}\sum\limits_{i=1}^{N}(f(x_i)&space;-&space;y_i)&space;^&space;2" title="J(w) = \frac{1}{2}\sum\limits_{i=1}^{N}(f(x_i) - y_i) ^ 2" /></a>。其中<a href="http://www.codecogs.com/eqnedit.php?latex=x_i" target="_blank"><img src="http://latex.codecogs.com/gif.latex?x_i" title="x_i" /></a>表示第i组学习样本的特征数据,<a href="http://www.codecogs.com/eqnedit.php?latex=y_i" target="_blank"><img src="http://latex.codecogs.com/gif.latex?y_i" title="y_i" /></a>表示第i组学习样本的类别。
 
- 　接下来的最优化过程，就是通过得到$$w$$使得$$J(w)$$尽可能的小。
+ 　接下来的最优化过程，就是通过得到w使得J(w)尽可能的小。
 
 ## 梯度下降法
 
@@ -48,7 +48,7 @@ $$ f(x) = \frac{1}{1+e^{-z}}$$
 　　梯度下降法，基本上是个最简单的最优化算法，十分易懂。基于的思想就是，找到某函数的最值，最好的方法就是沿着该函数的梯度方向探寻。
 
 　　不断进行以下过程的迭代
-　　for each $$w_i$$ in w  :   $$w_i := w_i - \alpha * \frac{d J(w)}{d w_i}$$
+　　<a href="http://www.codecogs.com/eqnedit.php?latex=for&space;~~each&space;~~&space;w_i&space;~~&space;in&space;~~&space;w&space;:&space;~~&space;w_i&space;:=&space;w_i&space;-&space;\alpha&space;*&space;\frac{d&space;J(w)}{d&space;w_i}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?for&space;~~each&space;~~&space;w_i&space;~~&space;in&space;~~&space;w&space;:&space;~~&space;w_i&space;:=&space;w_i&space;-&space;\alpha&space;*&space;\frac{d&space;J(w)}{d&space;w_i}" title="for ~~each ~~ w_i ~~ in ~~ w : ~~ w_i := w_i - \alpha * \frac{d J(w)}{d w_i}" /></a>
 
 　　其中$\alpha$指的是迭代步长，如果过大，则会达不到梯度下降的效果，可能直接越过最值。如果过小，则会迭代过慢。
 
@@ -105,7 +105,7 @@ $$ f(x) = \frac{1}{1+e^{-z}}$$
 ##结果
 　　我们采用普通的梯度下降，迭代500次，步长为0.01的方法进行二值分类，然后通过给定的测试集进行预测，正确率大约为63%。因为数据丢失在30%，所以这样的正确率还可以接受。
 
-![result](\images\ML4_9.png)
+![result](/images/ML4_9.png)
 
 #代码君
 [代码君请前往Github取](https://github.com/cxlove/MachineLearning/tree/master/logisticRegression)
