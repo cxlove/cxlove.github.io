@@ -1,10 +1,10 @@
-﻿---
+---
 layout: post
-title : MachineLearing学习笔记(5)--SVM支持向量机
-description : MachineLearing学习笔记(5)--SVM支持向量机
+title : MachineLearing学习笔记(5)--SVM
+description : MachineLearing学习笔记(5)--SVM
 category : 研究
-keywords :
 tags : MachineLearning study-note Python
+keywords : 
 ---
 
 #SVM的推导过程
