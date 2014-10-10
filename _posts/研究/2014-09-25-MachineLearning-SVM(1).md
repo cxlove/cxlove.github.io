@@ -1,7 +1,7 @@
 ---
 layout: post
-title : MachineLearing学习笔记(5)--SVM
-description : MachineLearing学习笔记(5)--SVM
+title : MachineLearing学习笔记(5)--SVM(1)
+description : MachineLearing学习笔记(5)--SVM(1)
 category : 研究
 tags : MachineLearning study-note Python
 keywords : 

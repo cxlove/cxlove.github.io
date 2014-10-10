@@ -1,7 +1,7 @@
 ---
 layout: post
-title : MachineLearing学习笔记(6)--AdaBoost自适应提升法
-description : MachineLearing学习笔记(6)--AdaBoost自适应提升法
+title : MachineLearing学习笔记(7)--AdaBoost自适应提升法
+description : MachineLearing学习笔记(7)--AdaBoost自适应提升法
 category : 研究
 tags : MachineLearning study-note Python
 keywords : 
