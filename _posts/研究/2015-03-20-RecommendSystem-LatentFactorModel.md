@@ -23,11 +23,36 @@ keywords :
 
 ## 模型描述
 
+
+### 模型
+
 假设有F个隐类别。
 
 而P(user , k)表示用户u的兴趣和第k个隐类别的关系，即在第k个类别中的权重。
 
 Q(item , k)表示物品i和第k个隐类别的关系。
+
+则用户user对物品item的兴趣度为：
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=Prefer&space;(user&space;,&space;item)&space;=&space;\sum_{k=1}^F{P(user&space;,&space;k)&space;*&space;Q(item&space;,&space;k)}" target="_blank"><img src="http://latex.codecogs.com/gif.latex?Prefer&space;(user&space;,&space;item)&space;=&space;\sum_{k=1}^F{P(user&space;,&space;k)&space;*&space;Q(item&space;,&space;k)}" title="Prefer (user , item) = \sum_{k=1}^F{P(user , k) * Q(item , k)}" /></a>
+
+
+那么需要对于P,Q的参数进行训练。
+
+则定义损失函数为：
+
+<a href="http://www.codecogs.com/eqnedit.php?latex=L&space;=&space;\sum_{(user&space;,&space;item)&space;\in&space;data}&space;(score&space;(user&space;,&space;item)&space;-&space;Prefer&space;(user&space;,&space;item))&space;^&space;2&space;&plus;&space;\lambda&space;||P(user)||^2&space;&plus;&space;\lambda&space;||Q(item)^2||" target="_blank"><img src="http://latex.codecogs.com/gif.latex?L&space;=&space;\sum_{(user&space;,&space;item)&space;\in&space;data}&space;(score&space;(user&space;,&space;item)&space;-&space;Prefer&space;(user&space;,&space;item))&space;^&space;2&space;&plus;&space;\lambda&space;||P(user)||^2&space;&plus;&space;\lambda&space;||Q(item)^2||" title="L = \sum_{(user , item) \in data} (score (user , item) - Prefer (user , item)) ^ 2 + \lambda ||P(user)||^2 + \lambda ||Q(item)^2||" /></a>
+
+
+其实后面的部分是防止过拟合的正则化项，然后通过随机梯度下降进行优化训练就可以了。
+
+并没有什么好说的。。。
+
+
+### 样本构造 
+
+因为movielens里面并没有负样本，然后需要构造一些。用户只对部分物品有过行为，第一种方案就是用户所有没有行为的物品为负样本，或者是采样一些。另外的方案就是，在没有过行为的物品中，按流行度采样。流行度很高，但是用户没有行为，那就可能是真的不喜欢。
+
 
 
 
