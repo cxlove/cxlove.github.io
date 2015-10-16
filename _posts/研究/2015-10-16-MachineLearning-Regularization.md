@@ -62,9 +62,7 @@ keywords :
 
 ## 正则化(Regularization)
 
-test : 
-
- $$ N(x;u;\Sigma) = \frac{1}{\sqrt{2\pi \| \Sigma \|}} \exp[-\frac{1}{2}(x-u)^T\Sigma^{-1} (x-u)]$$
+大多数的监督学习，都可以抽象成以下这个优化问题：$$min\limits_f \ loss(y - f(x) ) + \Omega (f)$$
 
 ### What
 
