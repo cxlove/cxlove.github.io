@@ -62,7 +62,7 @@ keywords :
 
 ## 正则化(Regularization)
 
-大多数的监督学习，都可以抽象成以下这个优化问题：$$min\limits_f \ loss(y - f(x) ) + \Omega (f)$$
+大多数的监督学习，都可以抽象成以下这个优化问题：$$min_f \ loss(y - f(x) ) + \Omega (f)$$
 
 ### What
 
