@@ -142,11 +142,11 @@ L2范数更多的是可以防止过拟合，具体也在下一章节介绍。
 
 ## 参考(Reference)
 
-知乎问题：[机器学习中使用「正则化来防止过拟合」到底是一个什么原理？为什么正则化项就可以防止过拟合？](http://www.zhihu.com/question/20700829){:target="_blank"}
+知乎问题：<a href="http://www.zhihu.com/question/20700829" target="_blank">机器学习中使用「正则化来防止过拟合」到底是一个什么原理？为什么正则化项就可以防止过拟合？</a>
 
-知乎总是：[机器学习中的Bias(偏差)，Error(误差)，和Variance(方差)有什么区别和联系？](http://www.zhihu.com/question/27068705){:target="_blank"}
+知乎问题：<a href="http://www.zhihu.com/question/27068705" target="_blank">机器学习中的Bias(偏差)，Error(误差)，和Variance(方差)有什么区别和联系？</a>
 
-zouxy09's blog [机器学习中的范数规则化之（一）L0、L1与L2范数](http://blog.csdn.net/zouxy09/article/details/24971995){:target="_blank"}
+zouxy09's blog：<a href="http://blog.csdn.net/zouxy09/article/details/24971995" target="_blank">机器学习中的范数规则化之（一）L0、L1与L2范数</a>
 
-波波语录：[波波语录精髓](http://www.qqtu8.com/f/20061208211555.gif){:target="_blank"}
+波波语录：<a href="http://www.qqtu8.com/f/20061208211555.gif" target="_blank">波波语录精髓</a>
 
